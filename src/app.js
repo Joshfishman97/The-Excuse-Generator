@@ -23,7 +23,7 @@ window.onload = function() {
     let randomWhenIndex = Math.floor(Math.random() * when.length);
     let excuse = who[randomWhoIndex] + " " + action[randomActionIndex] + " " + what[randomWhatIndex] + " " + when[randomWhenIndex];
     return excuse;
-    console.log(excuse);
+    
   }
   let p = document.getElementById("excuse");
   p.innerHTML = excuse();
