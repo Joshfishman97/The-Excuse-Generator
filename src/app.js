@@ -17,11 +17,11 @@ window.onload = function() {
       "during my lunch",
       "while I was praying"
     ];
-    let a = Math.floor(Math.random() * who.length);
-    let b = Math.floor(Math.random() * action.length);
-    let c = Math.floor(Math.random() * what.length);
-    let d = Math.floor(Math.random() * when.length);
-    let excuse = who[a] + " " + action[b] + " " + what[c] + " " + when[d];
+    let randomWhoIndex = Math.floor(Math.random() * who.length);
+    let randomActionIndex = Math.floor(Math.random() * action.length);
+    let randomWhatIndex = Math.floor(Math.random() * what.length);
+    let randomWhenIndex = Math.floor(Math.random() * when.length);
+    let excuse = who[randomWhoIndex] + " " + action[randomActionIndex] + " " + what[randomWhatIndex] + " " + when[randomWhenIndex];
     return excuse;
     console.log(excuse);
   }
