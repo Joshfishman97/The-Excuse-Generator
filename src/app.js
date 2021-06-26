@@ -21,9 +21,15 @@ window.onload = function() {
     let randomActionIndex = Math.floor(Math.random() * action.length);
     let randomWhatIndex = Math.floor(Math.random() * what.length);
     let randomWhenIndex = Math.floor(Math.random() * when.length);
-    let excuse = who[randomWhoIndex] + " " + action[randomActionIndex] + " " + what[randomWhatIndex] + " " + when[randomWhenIndex];
+    let excuse =
+      who[randomWhoIndex] +
+      " " +
+      action[randomActionIndex] +
+      " " +
+      what[randomWhatIndex] +
+      " " +
+      when[randomWhenIndex];
     return excuse;
-    
   }
   let p = document.getElementById("excuse");
   p.innerHTML = excuse();
